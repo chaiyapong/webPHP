@@ -1,6 +1,6 @@
 <?php
 	$username = "root";
-	$password = "root";
+	$password = "mobile";
 	$hostname = "localhost";
 
 	//connection to the database
@@ -8,7 +8,7 @@
 	  or die("Unable to connect to MySQL");
 	//echo "Connected to MySQL<br>";
 
-	$selected = mysql_select_db("test",$dbhandle)
+	$selected = mysql_select_db("mobile",$dbhandle)
 	  or die("Could not select examples");
 
 ?>

@@ -2,19 +2,28 @@
 <head>
 <title>ThaiCreate.Com Tutorial</title>
 <style type="text/css">
-	.form1{
-
-		border-color: blue;
+	.label-login-r{
+		text-align-last: right;
+	}
+	.label-login-l{
+		text-align-last: left;
 	}
 </style>
 </head>
 <body>
 <div class="form1">
 	<form name="form1" method="post" action="api/uploadAPI.php" enctype="multipart/form-data">
-		<input type="text" name="idName"/></br>
-		<input type="file" name="fileToUpload1"></br>
-		<input type="file" name="fileToUpload2"></br>
-		<input name="btnSubmit" type="submit" value="Submit">
+		<div class="row">
+			<div class="col-md-6 label-login-l"><label>User: </label></div>
+			<div class="col-md-6 label-login-l"><input type="text" name="sUser"/></div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 label-login-l"><label>Password: </label></div>
+			<div class="col-md-6 label-login-l"><input type="text" name="sPassword"/></div>
+		</div>
+		<div class="row">
+			<div class="col-md-12"><input name="btnSubmit" type="submit" value="Submit"></div>
+		</div>	
 	</form>
 </div>
 </body>
